@@ -1,0 +1,220 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #080808;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h2 {
+    font-size: 28px;
+}
+
+header span {
+    color: #ff4d24;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #ff4d24;
+}
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background:
+        linear-gradient(90deg, #000d, #0004),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600")
+        center/cover;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff4d24;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e63812;
+}
+
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section > p {
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+.section h2 {
+    margin-bottom: 25px;
+    color: #ff4d24;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.card {
+    background: #202020;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 18px 10px 10px;
+}
+
+.card p {
+    color: #ccc;
+    padding: 0 12px;
+    line-height: 1.5;
+}
+
+.plan {
+    padding: 30px 15px;
+    border: 1px solid #444;
+}
+
+.plan h2 {
+    margin: 20px 0;
+}
+
+.member-form {
+    max-width: 650px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #202020;
+    color: white;
+}
+
+.member-form button {
+    grid-column: 1 / -1;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #202020;
+}
+
+th, td {
+    padding: 13px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+th {
+    background: #ff4d24;
+}
+
+td a {
+    color: #ff795c;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #080808;
+    color: #bbb;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .member-form {
+        grid-template-columns: 1fr;
+    }
+
+    .member-form button {
+        grid-column: auto;
+    }
+}
+
+.delete-btn {
+    background: #d93636;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
